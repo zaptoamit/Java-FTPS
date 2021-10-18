@@ -1,0 +1,21 @@
+spring:
+  resources:
+      static-locations: file:${ftp.home-dir}
+  mvc:
+    static-path-pattern: /D:/**
+server:
+  host: localhost # This should be your server's real IP
+  port: 8080
+logging:
+  level:
+    root: info
+    com.ajavac: debug
+  file: spring.log
+ftp:
+  port: 2121
+  passive-ports:
+  max-login: 0
+  max-threads: 0
+  username: admin
+  password: admin
+  home-dir: D:/
